@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury RSVP Flyer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-black via-gray-900 to-black min-h-screen flex items-center justify-center p-6">
+
+  <div class="bg-white rounded-3xl shadow-2xl p-10 w-full max-w-[600px] text-center space-y-6">
+    <h1 class="text-4xl font-extrabold text-gray-900 tracking-wide uppercase">💎 VIP Evening Party</h1>
+    <p class="text-gray-700 text-lg leading-relaxed">
+      Join us for an unforgettable night of luxury, music, and networking. RSVP below to secure your spot.
+    </p>
+
+    <!-- 📋 RSVP SIGN-UP FORM -->
+    <form action="https://formspree.io/f/mnqkpwqg" method="POST" class="space-y-4 text-left">
+      <input type="text" name="name" placeholder="Full Name" required class="w-full border border-gray-300 px-4 py-2 rounded-md">
+
+      <input type="email" name="email" placeholder="Email Address" required class="w-full border border-gray-300 px-4 py-2 rounded-md">
+
+      <select name="attendance" required class="w-full border border-gray-300 px-4 py-2 rounded-md">
+        <option value="">Will You Attend?</option>
+        <option value="yes">Yes</option>
+        <option value="maybe">Maybe</option>
+        <option value="no">No</option>
+      </select>
+
+      <textarea name="message" placeholder="Comments or Requests" rows="3" class="w-full border border-gray-300 px-4 py-2 rounded-md"></textarea>
+
+      <button type="submit" class="w-full bg-black text-white py-3 rounded-full hover:bg-gray-800 transition">
+        Submit RSVP
+      </button>
+    </form>
+
+    <!-- Footer -->
+    <p class="text-xs text-gray-400 mt-6">We respect your privacy. Your information is never shared.</p>
+  </div>
+
+</body>
+</html>
